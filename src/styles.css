@@ -1,0 +1,322 @@
+:root {
+  --ink: #0A1428;      /* bleu marine profond du logo */
+  --green: #C9922E;    /* or, couleur signature du logo */
+  --green-deep: #8B5E15; /* bronze / or foncé du logo */
+  --lime: #F2DBA6;     /* or pâle, touches claires */
+  --paper: #FFFFFF;
+  --grey: #F5F1E7;     /* gris chaud, en harmonie avec l'or */
+  --steel: #5C6570;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Sora', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.mono {
+  font-family: 'Space Mono', monospace;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.pill-btn {
+  background: var(--ink);
+  color: #fff;
+  padding: 0.6rem 1.3rem;
+  border-radius: 40px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  border: none;
+  transition: 0.2s;
+}
+.pill-btn:hover {
+  background: var(--green-deep);
+}
+.btn-primary-custom {
+  background: var(--green);
+  color: #fff;
+  padding: 0.85rem 1.6rem;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: none;
+  transition: 0.2s;
+}
+.btn-primary-custom:hover {
+  background: var(--green-deep);
+}
+.btn-ghost-custom {
+  border: 2px solid var(--ink);
+  padding: 0.8rem 1.5rem;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  background: transparent;
+  transition: 0.2s;
+}
+.btn-ghost-custom:hover {
+  background: var(--ink);
+  color: #fff;
+}
+.hero-image {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
+}
+.hero-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+.eyebrow {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--green-deep);
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+.about-stats div {
+  border-left: 3px solid var(--green);
+  padding-left: 1rem;
+}
+.about-stats .number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--ink);
+  display: block;
+}
+.about-stats .label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  color: var(--steel);
+}
+.about-image {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+.about-image img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+.cat-card {
+  border-radius: 20px;
+  padding: 1.6rem;
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.cat-card .code {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.68rem;
+  opacity: 0.85;
+}
+.cat-card .cat-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+}
+.cat-card h4 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0.4rem 0 0.2rem;
+}
+.cat-card p {
+  font-size: 0.82rem;
+  opacity: 0.92;
+  margin: 0;
+}
+.sector-chip {
+  border: 2px solid #E7EAE6;
+  border-radius: 16px;
+  padding: 1.3rem;
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+  transition: 0.25s;
+}
+.sector-chip:hover {
+  border-color: var(--green);
+  transform: translateY(-3px);
+}
+.sector-chip .ic {
+  font-size: 1.6rem;
+}
+.sector-chip h6 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+.sector-chip span {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--steel);
+  text-transform: uppercase;
+}
+.testimonial-card {
+  background: var(--paper);
+  border-radius: 20px;
+  padding: 1.8rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  transition: 0.3s;
+  height: 100%;
+}
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+}
+.testimonial-card .quote {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--ink);
+  margin-bottom: 1.2rem;
+  font-style: italic;
+}
+.testimonial-card .quote::before {
+  content: "“";
+  font-size: 2rem;
+  color: var(--green);
+  line-height: 0.8;
+  margin-right: 0.15rem;
+}
+.testimonial-card .quote::after {
+  content: "”";
+  font-size: 2rem;
+  color: var(--green);
+  line-height: 0.8;
+  margin-left: 0.1rem;
+}
+.testimonial-card .author .avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--green);
+  flex-shrink: 0;
+}
+.testimonial-card .author .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.partner-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  transition: 0.2s;
+  opacity: 0.7;
+}
+.partner-item:hover {
+  opacity: 1;
+}
+.partner-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #f8faf7;
+  padding: 0.5rem;
+  border: 1px solid #E7EAE6;
+  transition: 0.2s;
+}
+.partner-item:hover img {
+  border-color: var(--green);
+  box-shadow: 0 4px 12px rgba(20, 154, 91, 0.15);
+}
+.partner-item span {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  color: var(--steel);
+  letter-spacing: 0.04em;
+}
+.contact-left {
+  background: var(--ink);
+  color: #fff;
+  padding: 3.5rem 2.5rem;
+}
+.contact-left h2 {
+  font-size: 2.1rem;
+  font-weight: 800;
+}
+.contact-left p {
+  color: #c8d1cb;
+}
+.c-row {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+.c-row .k {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  color: var(--lime);
+  width: 90px;
+  flex-shrink: 0;
+  padding-top: 0.15rem;
+}
+.c-row a {
+  border-bottom: 1px solid var(--green);
+  color: #fff;
+}
+.contact-right {
+  padding: 3.5rem 2.5rem;
+  background: var(--grey);
+}
+.field input,
+.field textarea {
+  width: 100%;
+  border: 2px solid #E7EAE6;
+  border-radius: 12px;
+  padding: 0.7rem 0.9rem;
+  font-family: 'Sora', sans-serif;
+  font-size: 0.92rem;
+  background: #fff;
+}
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--green);
+}
+footer {
+  background: var(--ink);
+  color: #c8d1cb;
+  padding: 1.6rem 0;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+}
+@media (max-width: 768px) {
+  .hero-image img {
+    height: 200px;
+  }
+  .about-image img {
+    height: 200px;
+  }
+}
